@@ -45,9 +45,6 @@ function Login() {
         localStorage.setItem("TOKEN", data.token);
         localStorage.setItem("REFRESH", data.refreshToken);
         localStorage.setItem("USER_PROFILE", JSON.stringify(data.user_profile));
-        localStorage.setItem("ROLE", JSON.stringify(data.role));
-        localStorage.setItem("PERMISSION", JSON.stringify(data.permission));
-        localStorage.setItem("COMPONENT", JSON.stringify(data.component));
         window.location.href = "/home";
       }else {
         setOpenSnackbar({
